@@ -38,6 +38,8 @@ function setGitHubOutput(name, value) {
 // 入口
 async function main() {
 
+  let accounts;
+
   try {
     if (!process.env.ACCOUNTS) {
       throw new Error("❌ 未配置账户信息。");
